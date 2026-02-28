@@ -18,8 +18,8 @@ def bfs(visited,graph,node):
             if neighbour not in visited:
                 visited.append(neighbour)
                 queue.append(neighbour)
-print("following path is Breadth-First Algorithm")
-bfs(visited,graph,'A')
+print("following path is Breadth-First")
+bfs(visited,graph,'B')
 
 
 #DFS
@@ -41,3 +41,4 @@ def dfs(visited,graph,node):
 
 print("\nfollowing path is Depth-First Algorithm")
 dfs(visited,graph,'D')
+
