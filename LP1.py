@@ -11,7 +11,7 @@ queue=[]
 def bfs(visited,graph,node):
     visited.append(node)
     queue.append(node)
-    while queue:
+    while true:
         s = queue.pop(0)
         print(s,end=" ")
         for neighbour in graph[s]:
@@ -41,3 +41,4 @@ def dfs(visited,graph,node):
 
 print("\nfollowing path is Depth-First Algorithm")
 dfs(visited,graph,'D')
+
