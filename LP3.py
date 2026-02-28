@@ -5,7 +5,7 @@ def selection_sort(array):
         min_index=i;
 
         for j in range(i+1, size):
-            if(array[j] < array[min_index]):
+            if(array[j] > array[min_index]):
                 min_index = j
 
         array[i], array[min_index] = array[min_index], array[i]
@@ -20,4 +20,5 @@ if __name__ == "__main__":
     data = [20, 12, 10, 15, 2]
     selection_sort(data)
     print("Sorted array in Ascending Order:")
+
     print_array(data)
